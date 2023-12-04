@@ -1,17 +1,17 @@
 @mixin telefono {
-  @media (min-widch: $telefono) {
+  @media (min-widcth: $telefono) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media (min-widch: $tablet) {
+  @media (min-widcth: $tablet) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-widch: $desktop) {
+  @media (min-widcth: $desktop) {
     @content;
   }
 }
