@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -366,7 +367,7 @@ h3 {
 
 .header {
   background-color: #4cb8b3;
-  padding: calc(5rem / 2);
+  padding: separacion/2 0;
 }
 .header .contenido-header {
   display: flex;
@@ -392,4 +393,63 @@ h1 {
 }
 .navegacion-principal a:hover {
   color: #fef460;
+}
+
+.video {
+  position: relative;
+  max-height: 90%;
+  overflow: hidden;
+}
+.video .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* Permalink - use to edit and share this gradient. Enlace permanente - úsalo para editar y compartir este gradiente: https://colorzilla.com/gradient-editor/#891c1e+0,9e37f2+65,ffffff+100&0.8+0,0.5+100 */
+  background: linear-gradient(135deg, rgba(137, 28, 30, 0.8) 0%, rgba(158, 55, 242, 0.61) 65%, rgba(255, 255, 255, 0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.video video {
+  display: block;
+  width: 100%;
+}
+
+.contenido-video {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.contenido-video h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+  font-size: 7rem;
+}
+.contenido-video span {
+  background-color: #f53576;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}
+
+.sobre-festival {
+  padding: 5rem 0;
+}
+@media (min-width: 768px) {
+  .sobre-festival {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+  }
+}
+
+.contenido-festival h2 {
+  font-size: 3rem;
+}
+.contenido-festival .fecha {
+  color: #f53576;
+  font-weight: bold;
+}
+.contenido-festival .texto {
+  line-height: 1.5;
 }
