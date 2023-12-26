@@ -17,7 +17,14 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-notify": "^4.0.0",
     "gulp-sass": "^5.1.0",
+    "gulp-webp": "^5.0.0",
     "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "stable": "^0.1.8",
+    "uuid": "^9.0.1"
   }
 }
